@@ -77,8 +77,14 @@
 				</li>
 				<li>
 					<a href="#">
-						<i class="fa fa-user" aria-hidden="true"></i>
+						<i class="fa fa-tasks" aria-hidden="true"></i>
 						<span>Create Task</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-bell" aria-hidden="true"></i>
+						<span>All Task</span>
 					</a>
 				</li>
 				<li>
@@ -99,8 +105,7 @@
 
 		</nav>
 		<section class="section-1">
-			<h1>WELCOME</h1>
-			<p>#CodingWithNiazi</p>
+			
 		</section>
 	</div>
 
