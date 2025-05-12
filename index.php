@@ -54,7 +54,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<i class="fa fa-power-off" aria-hidden="true"></i>
+						<i class="fa fa-sign-out" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>
 				</li>
@@ -71,14 +71,14 @@
 				</li>
 				<li>
 					<a href="#">
-						<i class="fa fa-tasks" aria-hidden="true"></i>
-						<span>My Task</span>
+						<i class="fa fa-plus" aria-hidden="true"></i>
+						<span>Manage Users</span>
 					</a>
 				</li>
 				<li>
 					<a href="#">
 						<i class="fa fa-user" aria-hidden="true"></i>
-						<span>Profile</span>
+						<span>Create Task</span>
 					</a>
 				</li>
 				<li>
@@ -89,13 +89,11 @@
 				</li>
 				<li>
 					<a href="#">
-						<i class="fa fa-power-off" aria-hidden="true"></i>
+						<i class="fa fa-sign-out" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>
 				</li>
-			</ul>
-
-                
+			</ul>   
 				<?php } ?> 
 
 
