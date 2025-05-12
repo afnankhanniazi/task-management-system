@@ -21,11 +21,16 @@
 				<img src="img/user.jpg">
 				<h4>Bhaii Log</h4>
 			</div>
-			<!-- Employee navigation bar-->
+			
+			 <?php
+			 $user = "admin";
+			 if ($user=="employee") {
+			 ?>
+			 <!-- Employee navigation bar-->
 			<ul>
 				<li>
 					<a href="#">
-						<i class="fa fa-teachometer" aria-hidden="true"></i>
+						<i class="fa fa-tachometer" aria-hidden="true"></i>
 						<span>Dashboard</span>
 					</a>
 				</li>
@@ -43,11 +48,57 @@
 				</li>
 				<li>
 					<a href="#">
+						<i class="fa fa-bell" aria-hidden="true"></i>
+						<span>Notification</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>
 				</li>
 			</ul>
+
+			<?php } else {?>
+				<!-- Admin navigation bar-->
+				<ul>
+				<li>
+					<a href="#">
+						<i class="fa fa-tachometer" aria-hidden="true"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-tasks" aria-hidden="true"></i>
+						<span>My Task</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<span>Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-bell" aria-hidden="true"></i>
+						<span>Notification</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-power-off" aria-hidden="true"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+
+                
+				<?php } ?> 
+
+
 		</nav>
 		<section class="section-1">
 			<h1>WELCOME</h1>
