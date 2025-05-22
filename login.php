@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,20 @@
 <div class="d-flex justify-content-center align-items-center" style="min-height:100vh;">
     <form  method="POST" action="app/login.php" class="shadow p-4 bg-white rounded" style="min-width:350px; width:100%; max-width:450px;">
         <h3 class="display-4">LOGIN</h3>
+        <div class="alert alert-success" role="alert">
+      A simple success alert—check it out!
+      </div>
+  <div class="alert alert-danger" role="alert">
+  A simple danger alert—check it out!
+</div>
+
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">User name</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="user_name" >
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
