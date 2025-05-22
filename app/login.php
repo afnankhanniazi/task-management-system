@@ -10,9 +10,8 @@ function validate_input($data) {
 }
 else
 {
-
     $em = "Un_known error occurred";
-    header("Location:  ../login.php");
+    header("Location:  ../login.php?error=$em");
     exit();
 }
-?>
+

@@ -11,15 +11,18 @@
 <body class="login-body bg-light" style="min-height:100vh;">
 
 <div class="d-flex justify-content-center align-items-center" style="min-height:100vh;">
-    <form  method="POST" action="app/login.php" class="shadow p-4 bg-white rounded" style="min-width:350px; width:100%; max-width:450px;">
-        <h3 class="display-4">LOGIN</h3>
-        <div class="alert alert-success" role="alert">
-      A simple success alert—check it out!
-      </div>
-  <div class="alert alert-danger" role="alert">
-  A simple danger alert—check it out!
+    <form  method="POST" action="app/login.php" class="shadow p-4 bg-white rounded" style="min-width:350px; width:100%; max-width:450px;">    
+    <h3 class="display-4">LOGIN</h3>
+    <?php if (isset($_GET['error'])) {
+      ?><div class="alert alert-danger" role="alert">
+  <?php echo stripcslashes( $_GET['error']) ?>
 </div>
-
+ <?php  } ?>
+ <?php if (isset($_GET['success'])) {
+      ?><div class="alert alert-success" role="alert">
+  <?php echo stripcslashes( $_GET['success']) ?>
+</div>
+ <?php  } ?>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">User name</label>
             <input type="text" class="form-control" name="user_name" >
