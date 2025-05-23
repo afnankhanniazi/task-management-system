@@ -16,8 +16,8 @@ if (isset($_SESSION['role']) && isset($_SESSION ['id']))
 	<div class="body">
         <?php include 'inc/nav.php'; ?>
 		<section class="section-1">
-		<h4>Manage User <a href="add-user.php" >Add User</a></h4>	
-        <table>
+		<h4 class="title"> Manage User <a href="add-user.php" >Add User</a></h4>	
+        <table class="main-table">
 <tr>
              <th>#</th>
              <th>Full Name</th>
@@ -26,15 +26,14 @@ if (isset($_SESSION['role']) && isset($_SESSION ['id']))
             <th>Action</th>         
 </tr>
 <tr>
-        <td>butt A</td>
+       <td>1</td>
+         <td>butt A</td>
         <td>butt</td>   
-        <td>employee</td>
+        <td>Employee</td>
         <td>
-            <a href="" >Delete</a>
+            <a href="" class="edit-btn" >Edit</a>
+            <a href="" class="delete-btn">Delete</a>
         </td>
-
-
-
 </tr>
 
         </table>
