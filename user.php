@@ -1,6 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION['role']) && isset($_SESSION ['id'])) {
+if (isset($_SESSION['role']) && isset($_SESSION ['id'])) 
+{
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,37 +16,29 @@ if (isset($_SESSION['role']) && isset($_SESSION ['id'])) {
 	<div class="body">
         <?php include 'inc/nav.php'; ?>
 		<section class="section-1">
-			Manage Users
-         <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-    </tr>
-  </tbody>
-</table>
+		<h4>Manage User <a href="add-user.php" >Add User</a></h4>	
+        <table>
+<tr>
+             <th>#</th>
+             <th>Full Name</th>
+             <th>Username</t>  
+             <th>Role</th>
+            <th>Action</th>         
+</tr>
+<tr>
+        <td>butt A</td>
+        <td>butt</td>   
+        <td>employee</td>
+        <td>
+            <a href="" >Delete</a>
+        </td>
+
+
+
+</tr>
+
+        </table>
+        
 		</section>
 	</div>
     <script type="text/javascript" >
