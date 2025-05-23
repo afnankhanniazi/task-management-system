@@ -1,3 +1,7 @@
+<?php
+session_start();
+if (isset($_SESSION['role']) && isset($_SESSION ['id'])) {
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,3 +115,12 @@
 
 </body>
 </html>
+<?php
+}
+else
+{
+ $em = "Login First";
+    header("Location: login.php?error=$em");
+    exit();
+}
+	?>
