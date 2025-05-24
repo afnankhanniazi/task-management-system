@@ -1,0 +1,2 @@
+Employee Management System
+This is a web-based application developed by following a YouTube tutorial.The group members are (Afnan Abbas Khan,Furqan Khalid Butt,Bilal Azhar) It allows the admin to manage employee information, including adding new employees, updating records, and deleting entries. The system uses PHP, MySQL, HTML, and CSS for building a functional CRUD (Create, Read, Update, Delete) interface.
