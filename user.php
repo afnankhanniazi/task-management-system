@@ -2,9 +2,13 @@
 session_start();
 if (isset($_SESSION['role']) && isset($_SESSION ['id'])) 
 {
+include "DB_connection.php";
+include "app/Model/User.php";
+$users = get_all_user($conn);
+//print_r($users);
 ?>
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 	<title>Manage Users</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +20,10 @@ if (isset($_SESSION['role']) && isset($_SESSION ['id']))
 	<div class="body">
         <?php include 'inc/nav.php'; ?>
 		<section class="section-1">
-		<h4 class="title"> Manage User <a href="add-user.php" >Add User</a></h4>	
+		<h4 class="title"> Manage User <a href="add-user.php" >Add User</a></h4>
+
+        <?php if($users !=0 ){
+?>
         <table class="main-table">
 <tr>
              <th>#</th>
@@ -25,19 +32,31 @@ if (isset($_SESSION['role']) && isset($_SESSION ['id']))
              <th>Role</th>
             <th>Action</th>         
 </tr>
+<?php $i=0; foreach($users as $user)   {  ?>
 <tr>
-       <td>1</td>
-         <td>butt A</td>
-        <td>butt</td>   
-        <td>Employee</td>
+         <td><?=++$i?></td>
+         <td><?=$user['full_name']?></td>
+        <td><?=$user['username']?></td>   
+        <td><?=$user['role']?></td>
         <td>
-            <a href="" class="edit-btn" >Edit</a>
-            <a href="" class="delete-btn">Delete</a>
+            <a href="edit-user.php?id=<?=$user['id']?>" class="edit-btn" >Edit</a>
+            <a href="delete-user.php?id=<?=$user['id']?>" class="delete-btn">Delete</a>
         </td>
-</tr>
-
-        </table>
         
+</tr>
+<?php
+        }
+        ?>
+        </table>
+     <?php
+        }
+        else
+        {
+            ?>  
+            <h3>No Users Found</h3>
+            <?php
+        }
+        ?>
 		</section>
 	</div>
     <script type="text/javascript" >
