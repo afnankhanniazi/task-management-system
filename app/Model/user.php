@@ -10,5 +10,5 @@ if ($stmt->rowCount() > 0) {
     } else {
         $users = 0;
     }
-return $users;
-}
+return $users; 
+}    

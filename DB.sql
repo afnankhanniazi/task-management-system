@@ -1,6 +1,7 @@
 --- User table
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE users 
+(
+    id INT IDENTITY(1,1) PRIMARY KEY,
     full_name VARCHAR(50) NOT NULL,
     username VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
