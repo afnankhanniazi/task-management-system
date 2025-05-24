@@ -4,7 +4,7 @@ if (isset($_SESSION['role']) && isset($_SESSION ['id']))
 {
 include "DB_connection.php";
 include "app/Model/User.php";
-$users = get_all_user($conn);
+$users = get_all_users($conn);
 //print_r($users);
 ?>
 <!DOCTYPE html>
