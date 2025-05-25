@@ -6,7 +6,6 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
     // include "app/Model/User.php";
 
     $notifications = get_all_my_notifications($conn, $_SESSION['id']);
-
  ?>
 <!DOCTYPE html>
 <html>

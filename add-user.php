@@ -1,4 +1,5 @@
 <?php 
+//require_once "DB_connection.php";
 session_start();
 if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "admin") {
   

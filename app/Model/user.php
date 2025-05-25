@@ -1,5 +1,5 @@
 <?php 
-
+//require_once "DB_connection.php";
 function get_all_users($conn){
 	$sql = "SELECT * FROM users WHERE role =? ";
 	$stmt = $conn->prepare($sql);

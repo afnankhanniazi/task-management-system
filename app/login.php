@@ -1,4 +1,6 @@
 <?php
+$sql="SELECT * FROM users WHERE username = ?";
+//require_once "DB_connection.php";
 session_start();
 if (isset($_POST['user_name']) && isset($_POST['password'])) 
 {  
