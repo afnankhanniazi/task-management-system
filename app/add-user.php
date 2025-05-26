@@ -1,5 +1,4 @@
 <?php 
-//require_once "DB_connection.php";
 session_start();
 if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
 
@@ -31,7 +30,6 @@ if (isset($_POST['user_name']) && isset($_POST['password']) && isset($_POST['ful
 	    exit();
 	}else 
 	{
-    
     /*$sql = "INSERT INTO *FROM  users WHERE user_name = ? LIMIT 1";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute([$user_name]);*/
@@ -42,7 +40,7 @@ if (isset($_POST['user_name']) && isset($_POST['password']) && isset($_POST['ful
        insert_user($conn, $data);
 
        $em = "User created successfully";
-	    header("Location: ../add-user.php?success=$sm");
+	    header("Location: ../add-user.php?success=$em");
 	    exit();
     
 	}

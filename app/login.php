@@ -1,4 +1,5 @@
 <?php
+
 $sql="SELECT * FROM users WHERE username = ?";
 //require_once "DB_connection.php";
 session_start();

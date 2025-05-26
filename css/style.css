@@ -24,9 +24,9 @@
 	cursor: pointer;
 	color: #fff;
 }
-/*.header i:hover {
+.header i:hover {
 	color: #127b8e;
-}*/
+}
 .header .notification {
 	position: relative;
 	cursor: pointer;
@@ -68,8 +68,6 @@
 .open-notification {
 	display: block;
 }
-
-
 .user-p {
 	text-align: center;
 	padding-left: 10px;
@@ -213,7 +211,7 @@
 
 .section-1 {
 	width: 100%;
-	background: #ffe;
+	background: #fff;
 }
 .section-1 .title a:hover{
 	opacity: .6;
